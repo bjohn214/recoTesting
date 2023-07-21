@@ -23,10 +23,866 @@
 <!-- Loading shared library : /opt/ilcsoft/muonc/ACTSTracking/v1.0.0/lib/libACTSTracking.so (libACTSTracking.so)-->
 
 XMLParser::parse : no <constants/> section found in reco_CONDOR.xml
- ***********************************************
- A runtime error occured - (uncaught exception):
-      lcio::Exception:  ProcessorMgr::registerProcessor: unknown processor with type CaloHitSelector ! 
+[ MESSAGE "Marlin"]  ---- no GEAR XML file given  --------- 
+[ MESSAGE "MyAIDAProcessor"] 
+[ MESSAGE "MyAIDAProcessor"] ---- MyAIDAProcessor -  parameters: 
+[ MESSAGE "MyAIDAProcessor"] 	Compress:  1
+[ MESSAGE "MyAIDAProcessor"] 	FileName:  test
+[ MESSAGE "MyAIDAProcessor"] 	FileType:  root
+[ MESSAGE "MyAIDAProcessor"] -------------------------------------------------
+[ VERBOSE "MyAIDAProcessor"] ---------------------------------- R A I D A ----------------------------------
+[ VERBOSE "MyAIDAProcessor"] ROOT Implementation of the Abstract Interfaces for Data Analysis (AIDA v3.2.1)
+[ VERBOSE "MyAIDAProcessor"] 
+[ VERBOSE "MyAIDAProcessor"] RAIDA Version: not supported by cvs2svn
+[ VERBOSE "MyAIDAProcessor"] 
+[ VERBOSE "MyAIDAProcessor"] RAIDA only creates simple ROOT histograms
+[ VERBOSE "MyAIDAProcessor"] Used ROOT Release: 6.22/06
+[ VERBOSE "MyAIDAProcessor"] -------------------------------------------------------------------------------
+[ VERBOSE "MyAIDAProcessor"] 
+[ MESSAGE "EventNumber"] 
+[ MESSAGE "EventNumber"] ---- EventNumber -  parameters: 
+[ MESSAGE "EventNumber"] 	HowOften:  1
+[ MESSAGE "EventNumber"] 	Verbosity:  MESSAGE
+[ MESSAGE "EventNumber"] -------------------------------------------------
+[ MESSAGE "Config"] 
+[ MESSAGE "Config"] ---- Config -  parameters: 
+[ MESSAGE "Config"] 	BeamCal:  3TeV
+[ MESSAGE "Config"] 	BeamCalChoices:  3TeV 380GeV 
+[ MESSAGE "Config"] 	Overlay:  False
+[ MESSAGE "Config"] 	OverlayChoices:  False BIB 
+[ MESSAGE "Config"] 	Tracking:  Truth
+[ MESSAGE "Config"] 	TrackingChoices:  Truth Conformal 
+[ MESSAGE "Config"] 	Verbosity:  DEBUG7
+[ MESSAGE "Config"] 	VertexUnconstrained:  OFF
+[ MESSAGE "Config"] 	VertexUnconstrainedChoices:  ON OFF 
+[ MESSAGE "Config"] -------------------------------------------------
+[ MESSAGE "Config"] BeamCal380GeV                       false
+[ MESSAGE "Config"] BeamCal3TeV                         true
+[ MESSAGE "Config"] BeamCalNot380GeV                    true
+[ MESSAGE "Config"] BeamCalNot3TeV                      false
+[ MESSAGE "Config"] OverlayBIB                          false
+[ MESSAGE "Config"] OverlayFalse                        true
+[ MESSAGE "Config"] OverlayNotBIB                       true
+[ MESSAGE "Config"] OverlayNotFalse                     false
+[ MESSAGE "Config"] TrackingConformal                   false
+[ MESSAGE "Config"] TrackingNotConformal                true
+[ MESSAGE "Config"] TrackingNotTruth                    false
+[ MESSAGE "Config"] TrackingTruth                       true
+[ MESSAGE "Config"] VertexUnconstrainedNotOFF           false
+[ MESSAGE "Config"] VertexUnconstrainedNotON            true
+[ MESSAGE "Config"] VertexUnconstrainedOFF              true
+[ MESSAGE "Config"] VertexUnconstrainedON               false
+[ WARNING4 "Config"]  -----------   
+[ WARNING4 "Config"]  the following processor will modify the LCIO event :  Config !! 
+[ WARNING4 "Config"]  ------------  
+[ MESSAGE "InitDD4hep"]  -------------------------------------
+[ MESSAGE "InitDD4hep"]  ---- Initializing DD4hep from file  /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/MuColl_10TeV_v0A.xml ... 
+Info in <TGeoManager::TGeoManager>: Geometry default, Detector Geometry created
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/MuColl_10TeV_v0A.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/MuColl_10TeV_v0A.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/MuColl_10TeV_v0A.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/elements.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/elements.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/elements.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/materials.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/materials.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/materials.xml succesfully parsed with TinyXML .....
+DD4hep           WARN  ++ STD conditions NOT defined by client. NTP defaults taken.
+Info in <TGeoManager::SetTopVolume>: Top volume is world_volume. Master volume is world_volume
+Detector         INFO  *********** Created World volume with size: 3000 3000 3000
+DocumentHandler  INFO  +++ Loading document URI: /opt/ilcsoft/muonc/DD4hep/v01-16/DDDetectors/compact/detector_types.xml [Resolved:'/opt/ilcsoft/muonc/DD4hep/v01-16/DDDetectors/compact/detector_types.xml']
+DocumentHandler  INFO  +++ Document /opt/ilcsoft/muonc/DD4hep/v01-16/DDDetectors/compact/detector_types.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Beampipe_o1_v01_02.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Beampipe_o1_v01_02.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Beampipe_o1_v01_02.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:BeampipeInner of type DD4hep_PolyconeSupport 
+Compact          INFO  ++ Converted subdetector:BeampipeOuter of type DD4hep_PolyconeSupport 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Nozzle_10deg_v0.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Nozzle_10deg_v0.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Nozzle_10deg_v0.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:NozzleW_right of type DD4hep_PolyconeSupport 
+Compact          INFO  ++ Converted subdetector:NozzleW_left of type DD4hep_PolyconeSupport 
+Compact          INFO  ++ Converted subdetector:NozzleBCH_right of type DD4hep_PolyconeSupport 
+Compact          INFO  ++ Converted subdetector:NozzleBCH_left of type DD4hep_PolyconeSupport 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Vertex_o2_v06_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Vertex_o2_v06_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Vertex_o2_v06_01.xml succesfully parsed with TinyXML .....
+Utilities        INFO  +++ setDetectorTypeFlags for detector :Vertex no xml element <type_flags/> found - nothing to set 
+Compact          INFO  ++ Converted subdetector:Vertex of type DD4hep_SubdetectorAssembly 
+Compact          INFO  ++ Converted subdetector:VertexBarrel of type ZSegmentedPlanarTracker [tracker]
+[ VERBOSE "InitDD4hep"] XXX Vertex endcap layers: 8
+Compact          INFO  ++ Converted subdetector:VertexEndcap of type VertexEndcap_o1_v06 [tracker]
+Compact          INFO  ++ Converted subdetector:VertexVerticalCable of type TrackerEndcapSupport_o1_v02 
+VertexEndcap     INFO  +++ Processing SurfaceInstaller for subdetector: 'VertexEndcap'
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[1] = dimension = 2
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[2] = u_x = -1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[3] = v_z = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[4] = n_y = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: vectors: u( -1 , 0 , 0) v( 0 , 0 , 1) n( 0 , 1 , 0) o( 0 , 0 , 0) 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTracker_o2_v06_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTracker_o2_v06_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTracker_o2_v06_01.xml succesfully parsed with TinyXML .....
+Utilities        INFO  +++ setDetectorTypeFlags for detector :InnerTrackers no xml element <type_flags/> found - nothing to set 
+Compact          INFO  ++ Converted subdetector:InnerTrackers of type DD4hep_SubdetectorAssembly 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/InnerTrackerBarrelModuleDown.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:InnerTrackerBarrel of type TrackerBarrel_o1_v05 [tracker]
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:InnerTrackerEndcap of type TrackerEndcap_o2_v06 [tracker]
+Compact          INFO  ++ Converted subdetector:InnerTrackerBarrelSupport of type TrackerBarrelSupport_o1_v01 
+Compact          INFO  ++ Converted subdetector:InnerTrackerEndcapSupport of type TrackerEndcapSupport_o1_v02 
+Compact          INFO  ++ Converted subdetector:InnerTrackerInterlink of type TubeSupport_o1_v01 
+Compact          INFO  ++ Converted subdetector:InnerTrackerVertexCable of type TubeSupport_o1_v01 
+Compact          INFO  ++ Converted subdetector:BeampipeShell of type ConicalSupport_o1_v01 
+Compact          INFO  ++ Converted subdetector:BeampipeShell2 of type TrackerEndcapSupport_o1_v02 
+Compact          INFO  ++ Converted subdetector:BeampipeShell3 of type TrackerBarrelSupport_o1_v01 
+InnerTrackerBarrel INFO  +++ Processing SurfaceInstaller for subdetector: 'InnerTrackerBarrel'
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[1] = dimension = 2
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[2] = u_x = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[3] = v_y = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[4] = n_z = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: vectors: u( 1 , 0 , 0) v( 0 , 1 , 0) n( 0 , 0 , 1) o( 0 , 0 , 0) 
+InnerTrackerEndcap INFO  +++ Processing SurfaceInstaller for subdetector: 'InnerTrackerEndcap'
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[1] = dimension = 2
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[2] = u_x = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[3] = v_y = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[4] = n_z = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: vectors: u( 1 , 0 , 0) v( 0 , 1 , 0) n( 0 , 0 , 1) o( 0 , 0 , 0) 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTracker_o2_v06_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTracker_o2_v06_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTracker_o2_v06_01.xml succesfully parsed with TinyXML .....
+Utilities        INFO  +++ setDetectorTypeFlags for detector :OuterTrackers no xml element <type_flags/> found - nothing to set 
+Compact          INFO  ++ Converted subdetector:OuterTrackers of type DD4hep_SubdetectorAssembly 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleUp.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/OuterTrackerBarrelModuleDown.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:OuterTrackerBarrel of type TrackerBarrel_o1_v05 [tracker]
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleIn.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/TrackerDiskModuleOut.xml succesfully parsed with TinyXML .....
+Compact          INFO  ++ Converted subdetector:OuterTrackerEndcap of type TrackerEndcap_o2_v06 [tracker]
+Compact          INFO  ++ Converted subdetector:OuterTrackerBarrelSupport of type TrackerBarrelSupport_o1_v01 
+Compact          INFO  ++ Converted subdetector:OuterTrackerEndcapSupport of type TrackerEndcapSupport_o1_v02 
+OuterTrackerBarrel INFO  +++ Processing SurfaceInstaller for subdetector: 'OuterTrackerBarrel'
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[1] = dimension = 2
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[2] = u_x = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[3] = v_y = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[4] = n_z = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: vectors: u( 1 , 0 , 0) v( 0 , 1 , 0) n( 0 , 0 , 1) o( 0 , 0 , 0) 
+OuterTrackerEndcap INFO  +++ Processing SurfaceInstaller for subdetector: 'OuterTrackerEndcap'
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[1] = dimension = 2
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[2] = u_x = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[3] = v_y = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: argument[4] = n_z = 1
+[ VERBOSE "InitDD4hep"] DD4hep_GenericSurfaceInstallerPlugin: vectors: u( 1 , 0 , 0) v( 0 , 1 , 0) n( 0 , 0 , 1) o( 0 , 0 , 0) 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Solenoid_o1_v01_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Solenoid_o1_v01_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/Solenoid_o1_v01_01.xml succesfully parsed with TinyXML .....
+Utilities        INFO  +++ setDetectorTypeFlags for detector :Solenoid no xml element <type_flags/> found - nothing to set 
+Compact          INFO  ++ Converted subdetector:Solenoid of type DD4hep_SubdetectorAssembly 
+Compact          INFO  ++ Converted subdetector:SolenoidBarrel of type DD4hep_Solenoid_o1_v01 
+Compact          INFO  ++ Converted subdetector:SolenoidEndcaps of type DD4hep_DiskTracker 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalBarrel_o2_v01_02.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalBarrel_o2_v01_02.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalBarrel_o2_v01_02.xml succesfully parsed with TinyXML .....
+[ VERBOSE "InitDD4hep"] Layer: 0 Rmin: 177.1 layer_pos_z: -13.1075 Dist: 177.1 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 1 Rmin: 177.1 layer_pos_z: -12.5725 Dist: 177.635 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 2 Rmin: 177.1 layer_pos_z: -12.0375 Dist: 178.17 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 3 Rmin: 177.1 layer_pos_z: -11.5025 Dist: 178.705 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 4 Rmin: 177.1 layer_pos_z: -10.9675 Dist: 179.24 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 5 Rmin: 177.1 layer_pos_z: -10.4325 Dist: 179.775 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 6 Rmin: 177.1 layer_pos_z: -9.8975 Dist: 180.31 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 7 Rmin: 177.1 layer_pos_z: -9.3625 Dist: 180.845 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 8 Rmin: 177.1 layer_pos_z: -8.8275 Dist: 181.38 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 9 Rmin: 177.1 layer_pos_z: -8.2925 Dist: 181.915 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 10 Rmin: 177.1 layer_pos_z: -7.7575 Dist: 182.45 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 11 Rmin: 177.1 layer_pos_z: -7.2225 Dist: 182.985 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 12 Rmin: 177.1 layer_pos_z: -6.6875 Dist: 183.52 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 13 Rmin: 177.1 layer_pos_z: -6.1525 Dist: 184.055 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 14 Rmin: 177.1 layer_pos_z: -5.6175 Dist: 184.59 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 15 Rmin: 177.1 layer_pos_z: -5.0825 Dist: 185.125 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 16 Rmin: 177.1 layer_pos_z: -4.5475 Dist: 185.66 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 17 Rmin: 177.1 layer_pos_z: -4.0125 Dist: 186.195 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 18 Rmin: 177.1 layer_pos_z: -3.4775 Dist: 186.73 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 19 Rmin: 177.1 layer_pos_z: -2.9425 Dist: 187.265 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 20 Rmin: 177.1 layer_pos_z: -2.4075 Dist: 187.8 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 21 Rmin: 177.1 layer_pos_z: -1.8725 Dist: 188.335 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 22 Rmin: 177.1 layer_pos_z: -1.3375 Dist: 188.87 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 23 Rmin: 177.1 layer_pos_z: -0.8025 Dist: 189.405 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 24 Rmin: 177.1 layer_pos_z: -0.2675 Dist: 189.94 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 25 Rmin: 177.1 layer_pos_z: 0.2675 Dist: 190.475 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 26 Rmin: 177.1 layer_pos_z: 0.8025 Dist: 191.01 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 27 Rmin: 177.1 layer_pos_z: 1.3375 Dist: 191.545 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 28 Rmin: 177.1 layer_pos_z: 1.8725 Dist: 192.08 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 29 Rmin: 177.1 layer_pos_z: 2.4075 Dist: 192.615 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 30 Rmin: 177.1 layer_pos_z: 2.9425 Dist: 193.15 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 31 Rmin: 177.1 layer_pos_z: 3.4775 Dist: 193.685 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 32 Rmin: 177.1 layer_pos_z: 4.0125 Dist: 194.22 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 33 Rmin: 177.1 layer_pos_z: 4.5475 Dist: 194.755 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 34 Rmin: 177.1 layer_pos_z: 5.0825 Dist: 195.29 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 35 Rmin: 177.1 layer_pos_z: 5.6175 Dist: 195.825 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 36 Rmin: 177.1 layer_pos_z: 6.1525 Dist: 196.36 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 37 Rmin: 177.1 layer_pos_z: 6.6875 Dist: 196.895 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 38 Rmin: 177.1 layer_pos_z: 7.2225 Dist: 197.43 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 39 Rmin: 177.1 layer_pos_z: 7.7575 Dist: 197.965 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 40 Rmin: 177.1 layer_pos_z: 8.2925 Dist: 198.5 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 41 Rmin: 177.1 layer_pos_z: 8.8275 Dist: 199.035 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 42 Rmin: 177.1 layer_pos_z: 9.3625 Dist: 199.57 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 43 Rmin: 177.1 layer_pos_z: 9.8975 Dist: 200.105 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 44 Rmin: 177.1 layer_pos_z: 10.4325 Dist: 200.64 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 45 Rmin: 177.1 layer_pos_z: 10.9675 Dist: 201.175 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 46 Rmin: 177.1 layer_pos_z: 11.5025 Dist: 201.71 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 47 Rmin: 177.1 layer_pos_z: 12.0375 Dist: 202.245 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 48 Rmin: 177.1 layer_pos_z: 12.5725 Dist: 202.78 inner_thickness: 0.27 outer_thickness: 0.265
+[ VERBOSE "InitDD4hep"] Layer: 49 Rmin: 177.1 layer_pos_z: 13.1075 Dist: 203.315 inner_thickness: 0.27 outer_thickness: 0.265
+Compact          INFO  ++ Converted subdetector:ECalBarrel of type GenericCalBarrel_o1_v01 [calorimeter]
+ECalBarrel       INFO  +++ Processing SurfaceInstaller for subdetector: 'ECalBarrel'
+DD4hep_CaloFaceBarrelSurfacePlugin INFO  install tracking surfaces for :  ECalBarrel 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalEndcap_o2_v01_02.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalEndcap_o2_v01_02.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/ECalEndcap_o2_v01_02.xml succesfully parsed with TinyXML .....
+[ VERBOSE "InitDD4hep"] Number of layers in group 0 : 50
+Compact          INFO  ++ Converted subdetector:ECalEndcap of type GenericCalEndcap_o1_v01 [calorimeter]
+ECalEndcap       INFO  +++ Processing SurfaceInstaller for subdetector: 'ECalEndcap'
+DD4hep_CaloFaceEndcapSurfacePlugin INFO  install tracking surfaces for :  ECalEndcap 
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalBarrel_o1_v01_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalBarrel_o1_v01_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalBarrel_o1_v01_01.xml succesfully parsed with TinyXML .....
+[ VERBOSE "InitDD4hep"] Layer: 0 Rmin: 203.81 layer_pos_z: -98.05 Dist: 203.81 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 1 Rmin: 203.81 layer_pos_z: -95.4 Dist: 206.46 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 2 Rmin: 203.81 layer_pos_z: -92.75 Dist: 209.11 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 3 Rmin: 203.81 layer_pos_z: -90.1 Dist: 211.76 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 4 Rmin: 203.81 layer_pos_z: -87.45 Dist: 214.41 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 5 Rmin: 203.81 layer_pos_z: -84.8 Dist: 217.06 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 6 Rmin: 203.81 layer_pos_z: -82.15 Dist: 219.71 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 7 Rmin: 203.81 layer_pos_z: -79.5 Dist: 222.36 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 8 Rmin: 203.81 layer_pos_z: -76.85 Dist: 225.01 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 9 Rmin: 203.81 layer_pos_z: -74.2 Dist: 227.66 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 10 Rmin: 203.81 layer_pos_z: -71.55 Dist: 230.31 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 11 Rmin: 203.81 layer_pos_z: -68.9 Dist: 232.96 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 12 Rmin: 203.81 layer_pos_z: -66.25 Dist: 235.61 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 13 Rmin: 203.81 layer_pos_z: -63.6 Dist: 238.26 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 14 Rmin: 203.81 layer_pos_z: -60.95 Dist: 240.91 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 15 Rmin: 203.81 layer_pos_z: -58.3 Dist: 243.56 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 16 Rmin: 203.81 layer_pos_z: -55.65 Dist: 246.21 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 17 Rmin: 203.81 layer_pos_z: -53 Dist: 248.86 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 18 Rmin: 203.81 layer_pos_z: -50.35 Dist: 251.51 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 19 Rmin: 203.81 layer_pos_z: -47.7 Dist: 254.16 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 20 Rmin: 203.81 layer_pos_z: -45.05 Dist: 256.81 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 21 Rmin: 203.81 layer_pos_z: -42.4 Dist: 259.46 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 22 Rmin: 203.81 layer_pos_z: -39.75 Dist: 262.11 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 23 Rmin: 203.81 layer_pos_z: -37.1 Dist: 264.76 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 24 Rmin: 203.81 layer_pos_z: -34.45 Dist: 267.41 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 25 Rmin: 203.81 layer_pos_z: -31.8 Dist: 270.06 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 26 Rmin: 203.81 layer_pos_z: -29.15 Dist: 272.71 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 27 Rmin: 203.81 layer_pos_z: -26.5 Dist: 275.36 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 28 Rmin: 203.81 layer_pos_z: -23.85 Dist: 278.01 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 29 Rmin: 203.81 layer_pos_z: -21.2 Dist: 280.66 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 30 Rmin: 203.81 layer_pos_z: -18.55 Dist: 283.31 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 31 Rmin: 203.81 layer_pos_z: -15.9 Dist: 285.96 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 32 Rmin: 203.81 layer_pos_z: -13.25 Dist: 288.61 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 33 Rmin: 203.81 layer_pos_z: -10.6 Dist: 291.26 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 34 Rmin: 203.81 layer_pos_z: -7.95 Dist: 293.91 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 35 Rmin: 203.81 layer_pos_z: -5.3 Dist: 296.56 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 36 Rmin: 203.81 layer_pos_z: -2.65 Dist: 299.21 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 37 Rmin: 203.81 layer_pos_z: -1.77636e-15 Dist: 301.86 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 38 Rmin: 203.81 layer_pos_z: 2.65 Dist: 304.51 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 39 Rmin: 203.81 layer_pos_z: 5.3 Dist: 307.16 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 40 Rmin: 203.81 layer_pos_z: 7.95 Dist: 309.81 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 41 Rmin: 203.81 layer_pos_z: 10.6 Dist: 312.46 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 42 Rmin: 203.81 layer_pos_z: 13.25 Dist: 315.11 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 43 Rmin: 203.81 layer_pos_z: 15.9 Dist: 317.76 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 44 Rmin: 203.81 layer_pos_z: 18.55 Dist: 320.41 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 45 Rmin: 203.81 layer_pos_z: 21.2 Dist: 323.06 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 46 Rmin: 203.81 layer_pos_z: 23.85 Dist: 325.71 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 47 Rmin: 203.81 layer_pos_z: 26.5 Dist: 328.36 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 48 Rmin: 203.81 layer_pos_z: 29.15 Dist: 331.01 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 49 Rmin: 203.81 layer_pos_z: 31.8 Dist: 333.66 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 50 Rmin: 203.81 layer_pos_z: 34.45 Dist: 336.31 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 51 Rmin: 203.81 layer_pos_z: 37.1 Dist: 338.96 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 52 Rmin: 203.81 layer_pos_z: 39.75 Dist: 341.61 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 53 Rmin: 203.81 layer_pos_z: 42.4 Dist: 344.26 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 54 Rmin: 203.81 layer_pos_z: 45.05 Dist: 346.91 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 55 Rmin: 203.81 layer_pos_z: 47.7 Dist: 349.56 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 56 Rmin: 203.81 layer_pos_z: 50.35 Dist: 352.21 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 57 Rmin: 203.81 layer_pos_z: 53 Dist: 354.86 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 58 Rmin: 203.81 layer_pos_z: 55.65 Dist: 357.51 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 59 Rmin: 203.81 layer_pos_z: 58.3 Dist: 360.16 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 60 Rmin: 203.81 layer_pos_z: 60.95 Dist: 362.81 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 61 Rmin: 203.81 layer_pos_z: 63.6 Dist: 365.46 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 62 Rmin: 203.81 layer_pos_z: 66.25 Dist: 368.11 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 63 Rmin: 203.81 layer_pos_z: 68.9 Dist: 370.76 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 64 Rmin: 203.81 layer_pos_z: 71.55 Dist: 373.41 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 65 Rmin: 203.81 layer_pos_z: 74.2 Dist: 376.06 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 66 Rmin: 203.81 layer_pos_z: 76.85 Dist: 378.71 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 67 Rmin: 203.81 layer_pos_z: 79.5 Dist: 381.36 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 68 Rmin: 203.81 layer_pos_z: 82.15 Dist: 384.01 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 69 Rmin: 203.81 layer_pos_z: 84.8 Dist: 386.66 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 70 Rmin: 203.81 layer_pos_z: 87.45 Dist: 389.31 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 71 Rmin: 203.81 layer_pos_z: 90.1 Dist: 391.96 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 72 Rmin: 203.81 layer_pos_z: 92.75 Dist: 394.61 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 73 Rmin: 203.81 layer_pos_z: 95.4 Dist: 397.26 inner_thickness: 2.1 outer_thickness: 0.55
+[ VERBOSE "InitDD4hep"] Layer: 74 Rmin: 203.81 layer_pos_z: 98.05 Dist: 399.91 inner_thickness: 2.1 outer_thickness: 0.55
+Compact          INFO  ++ Converted subdetector:HCalBarrel of type GenericCalBarrel_o1_v01 [calorimeter]
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalEndcap_o1_v01_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalEndcap_o1_v01_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/HCalEndcap_o1_v01_01.xml succesfully parsed with TinyXML .....
+Utilities        INFO  +++ setDetectorTypeFlags for detector :HCalEndcaps no xml element <type_flags/> found - nothing to set 
+Compact          INFO  ++ Converted subdetector:HCalEndcaps of type DD4hep_SubdetectorAssembly 
+[ VERBOSE "InitDD4hep"] Number of layers in group 0 : 15
+[ VERBOSE "InitDD4hep"] Number of layers in group 1 : 15
+[ VERBOSE "InitDD4hep"] Number of layers in group 2 : 15
+[ VERBOSE "InitDD4hep"] Number of layers in group 3 : 15
+[ VERBOSE "InitDD4hep"] Number of layers in group 4 : 15
+Compact          INFO  ++ Converted subdetector:HCalEndcap of type GenericCalEndcap_o2_v01 [calorimeter]
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeBarrel_o1_v01_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeBarrel_o1_v01_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeBarrel_o1_v01_01.xml succesfully parsed with TinyXML .....
+[ VERBOSE "InitDD4hep"] Layer: 0 Rmin: 446.1 layer_pos_z: -85.2 Dist: 446.1 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 1 Rmin: 446.1 layer_pos_z: -56.8 Dist: 474.5 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 2 Rmin: 446.1 layer_pos_z: -28.4 Dist: 502.9 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 3 Rmin: 446.1 layer_pos_z: 3.55271e-15 Dist: 531.3 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 4 Rmin: 446.1 layer_pos_z: 28.4 Dist: 559.7 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 5 Rmin: 446.1 layer_pos_z: 56.8 Dist: 588.1 inner_thickness: 0.75 outer_thickness: 27.65
+[ VERBOSE "InitDD4hep"] Layer: 6 Rmin: 446.1 layer_pos_z: 85.2 Dist: 616.5 inner_thickness: 0.75 outer_thickness: 27.65
+Compact          INFO  ++ Converted subdetector:YokeBarrel of type GenericCalBarrel_o1_v01 [calorimeter]
+DocumentHandler  INFO  +++ Loading document URI: /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeEndcap_o1_v01_01.xml [Resolved:'/home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeEndcap_o1_v01_01.xml']
+DocumentHandler  INFO  +++ Document /home/bjohn214/detector-simulation/geometries/MuColl_10TeV_v0A/YokeEndcap_o1_v01_01.xml succesfully parsed with TinyXML .....
+[ VERBOSE "InitDD4hep"] Number of layers in group 0 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 1 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 2 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 3 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 4 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 5 : 1
+[ VERBOSE "InitDD4hep"] Number of layers in group 6 : 1
+Compact          INFO  ++ Converted subdetector:YokeEndcap of type GenericCalEndcap_o2_v01 [calorimeter]
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 27552
+Info in <TGeoManager::CloseGeometry>: 1593970 nodes/ 260 volume UID's in Detector Geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+Compact          INFO  ++ Converted field: Successfully created field GlobalSolenoid [solenoid]
+Detector         INFO  +++ Patching names of anonymous shapes....
+DD4hepVolumeManager INFO  **** running plugin DD4hepVolumeManager ! 
+VolumeManager    INFO   - populating volume ids - be patient ...
+VolumeManager    INFO   - populating volume ids - done. 78810 nodes.
+VolumeManager    INFO  +++ Volume manager populated and loaded.
+InstallSurfaceManager INFO  **** running plugin InstallSurfaceManager ! 
+InstallSurfaceManager INFO  --------  SurfaceManager contains the following maps : --------- 
+  key: BeampipeInner 	 number of surfaces : 0
+  key: BeampipeOuter 	 number of surfaces : 0
+  key: BeampipeShell 	 number of surfaces : 4
+  key: BeampipeShell2 	 number of surfaces : 4
+  key: BeampipeShell3 	 number of surfaces : 1
+  key: ECalBarrel 	 number of surfaces : 12
+  key: ECalEndcap 	 number of surfaces : 2
+  key: HCalBarrel 	 number of surfaces : 0
+  key: HCalEndcap 	 number of surfaces : 0
+  key: HCalEndcaps 	 number of surfaces : 0
+  key: InnerTrackerBarrel 	 number of surfaces : 9032
+  key: InnerTrackerBarrelSupport 	 number of surfaces : 4
+  key: InnerTrackerEndcap 	 number of surfaces : 1196
+  key: InnerTrackerEndcapSupport 	 number of surfaces : 20
+  key: InnerTrackerInterlink 	 number of surfaces : 2
+  key: InnerTrackerVertexCable 	 number of surfaces : 2
+  key: InnerTrackers 	 number of surfaces : 10265
+  key: NozzleBCH_left 	 number of surfaces : 0
+  key: NozzleBCH_right 	 number of surfaces : 0
+  key: NozzleW_left 	 number of surfaces : 0
+  key: NozzleW_right 	 number of surfaces : 0
+  key: OuterTrackerBarrel 	 number of surfaces : 64512
+  key: OuterTrackerBarrelSupport 	 number of surfaces : 3
+  key: OuterTrackerEndcap 	 number of surfaces : 1152
+  key: OuterTrackerEndcapSupport 	 number of surfaces : 12
+  key: OuterTrackers 	 number of surfaces : 65679
+  key: Solenoid 	 number of surfaces : 0
+  key: SolenoidBarrel 	 number of surfaces : 0
+  key: SolenoidEndcaps 	 number of surfaces : 0
+  key: Vertex 	 number of surfaces : 1068
+  key: VertexBarrel 	 number of surfaces : 810
+  key: VertexEndcap 	 number of surfaces : 256
+  key: VertexVerticalCable 	 number of surfaces : 2
+  key: YokeBarrel 	 number of surfaces : 0
+  key: YokeEndcap 	 number of surfaces : 0
+  key: calorimeter 	 number of surfaces : 14
+  key: compound 	 number of surfaces : 77012
+  key: passive 	 number of surfaces : 54
+  key: tracker 	 number of surfaces : 76958
+  key: world 	 number of surfaces : 154038
+---------------------------------------------------------------- 
 
- Marlin will have to be terminated, sorry.
- ***********************************************
-
+[ MESSAGE "InitDD4hep"]  ---- instantiated  geometry for detector MuColl_10TeV_v0A
+[ MESSAGE "InitDD4hep"]  -------------------------------------
+[ MESSAGE "InitDD4hep"]  ---------------------------------------------------------------------------------- 
+[ MESSAGE "InitDD4hep"]   LCTrackerCellID::_encoding will set to   system:5,side:-2,layer:6,module:11,sensor:8
+[ MESSAGE "InitDD4hep"]   as specified in lccd parameter  : GlobalTrackerReadoutID
+[ MESSAGE "InitDD4hep"]  ---------------------------------------------------------------------------------- 
+[ MESSAGE "InitDD4hep"] 
+[ MESSAGE "OverlayBIB"] 
+[ MESSAGE "OverlayBIB"] ---- OverlayBIB -  parameters: 
+[ MESSAGE "OverlayBIB"] 	AllowReusingBackgroundFiles:  true
+[ MESSAGE "OverlayBIB"] 	BackgroundFileNames:  /data/BIB10TeV/BIB_sim_mm.slcio /data/BIB10TeV/BIB_sim_mp.slcio 
+[ MESSAGE "OverlayBIB"] 	Collection_IntegrationTimes:  VertexBarrelCollection -0.36 0.48 VertexEndcapCollection -0.36 0.48 InnerTrackerBarrelCollection -0.36 0.48 InnerTrackerEndcapCollection -0.36 0.48 OuterTrackerBarrelCollection -0.36 0.48 OuterTrackerEndcapCollection -0.36 0.48 ECalBarrelCollection -0.25 10. ECalEndcapCollection -0.25 10. HCalBarrelCollection -0.25 10. HCalEndcapCollection -0.25 10. YokeBarrelCollection -0.25 10. YokeEndcapCollection -0.25 10. 
+[ MESSAGE "OverlayBIB"] 	Delta_t:  10000
+[ MESSAGE "OverlayBIB"] 	IntegrationTimeMin:  -0.36
+[ MESSAGE "OverlayBIB"] 	MCParticleCollectionName:  MCParticle
+[ MESSAGE "OverlayBIB"] 	MCPhysicsParticleCollectionName:  MCPhysicsParticles
+[ MESSAGE "OverlayBIB"] 	MergeMCParticles:  false
+[ MESSAGE "OverlayBIB"] 	NBunchtrain:  1
+[ MESSAGE "OverlayBIB"] 	NumberBackground:  1060
+[ MESSAGE "OverlayBIB"] 	PhysicsBX:  1
+[ MESSAGE "OverlayBIB"] 	Poisson_random_NOverlay:  false
+[ MESSAGE "OverlayBIB"] 	RandomBx:  false
+[ MESSAGE "OverlayBIB"] 	StartBackgroundFileIndex:  0
+[ MESSAGE "OverlayBIB"] 	TPCDriftvelocity:  0.05
+[ MESSAGE "OverlayBIB"] 	Verbosity:  DEBUG0
+[ MESSAGE "OverlayBIB"] -------------------------------------------------
+[ WARNING "OverlayBIB"] Attention! There are 2 files in the list of background files to overlay. Make sure that the total number of background events is sufficiently large for your needs!!
+[ MESSAGE "OverlayBIB"] Collection integration times:
+[ MESSAGE "OverlayBIB"]   ECalBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayBIB"]   ECalEndcapCollection: -0.25 -> 10
+[ MESSAGE "OverlayBIB"]   HCalBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayBIB"]   HCalEndcapCollection: -0.25 -> 10
+[ MESSAGE "OverlayBIB"]   InnerTrackerBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   InnerTrackerEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   OuterTrackerBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   OuterTrackerEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   VertexBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   VertexEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayBIB"]   YokeBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayBIB"]   YokeEndcapCollection: -0.25 -> 10
+[ WARNING4 "OverlayBIB"]  -----------   
+[ WARNING4 "OverlayBIB"]  the following processor will modify the LCIO event :  OverlayBIB !! 
+[ WARNING4 "OverlayBIB"]  ------------  
+[ MESSAGE "OverlayFalse"] 
+[ MESSAGE "OverlayFalse"] ---- OverlayFalse -  parameters: 
+[ MESSAGE "OverlayFalse"] 	AllowReusingBackgroundFiles:  true
+[ MESSAGE "OverlayFalse"] 	BackgroundFileNames:  /dev/null 
+[ MESSAGE "OverlayFalse"] 	Collection_IntegrationTimes:  VertexBarrelCollection -0.36 0.48 VertexEndcapCollection -0.36 0.48 InnerTrackerBarrelCollection -0.36 0.48 InnerTrackerEndcapCollection -0.36 0.48 OuterTrackerBarrelCollection -0.36 0.48 OuterTrackerEndcapCollection -0.36 0.48 ECalBarrelCollection -0.25 10. ECalEndcapCollection -0.25 10. HCalBarrelCollection -0.25 10. HCalEndcapCollection -0.25 10. YokeBarrelCollection -0.25 10. YokeEndcapCollection -0.25 10. 
+[ MESSAGE "OverlayFalse"] 	Delta_t:  10000
+[ MESSAGE "OverlayFalse"] 	IntegrationTimeMin:  -0.36
+[ MESSAGE "OverlayFalse"] 	MCParticleCollectionName:  MCParticle
+[ MESSAGE "OverlayFalse"] 	MCPhysicsParticleCollectionName:  MCPhysicsParticles
+[ MESSAGE "OverlayFalse"] 	MergeMCParticles:  false
+[ MESSAGE "OverlayFalse"] 	NBunchtrain:  0
+[ MESSAGE "OverlayFalse"] 	NumberBackground:  0
+[ MESSAGE "OverlayFalse"] 	PhysicsBX:  1
+[ MESSAGE "OverlayFalse"] 	Poisson_random_NOverlay:  false
+[ MESSAGE "OverlayFalse"] 	RandomBx:  false
+[ MESSAGE "OverlayFalse"] 	TPCDriftvelocity:  0.05
+[ MESSAGE "OverlayFalse"] -------------------------------------------------
+[ WARNING "OverlayFalse"] Attention! There are 1 files in the list of background files to overlay. Make sure that the total number of background events is sufficiently large for your needs!!
+[ MESSAGE "OverlayFalse"] Collection integration times:
+[ MESSAGE "OverlayFalse"]   ECalBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayFalse"]   ECalEndcapCollection: -0.25 -> 10
+[ MESSAGE "OverlayFalse"]   HCalBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayFalse"]   HCalEndcapCollection: -0.25 -> 10
+[ MESSAGE "OverlayFalse"]   InnerTrackerBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   InnerTrackerEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   OuterTrackerBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   OuterTrackerEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   VertexBarrelCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   VertexEndcapCollection: -0.36 -> 0.48
+[ MESSAGE "OverlayFalse"]   YokeBarrelCollection: -0.25 -> 10
+[ MESSAGE "OverlayFalse"]   YokeEndcapCollection: -0.25 -> 10
+[ WARNING4 "OverlayFalse"]  -----------   
+[ WARNING4 "OverlayFalse"]  the following processor will modify the LCIO event :  OverlayFalse !! 
+[ WARNING4 "OverlayFalse"]  ------------  
+[ MESSAGE "CKFTracking"] 
+[ MESSAGE "CKFTracking"] ---- CKFTracking -  parameters: 
+[ MESSAGE "CKFTracking"] 	CKF_Chi2CutOff:  10
+[ MESSAGE "CKFTracking"] 	CKF_NumMeasurementsCutOff:  1
+[ MESSAGE "CKFTracking"] 	InitialTrackError_Lambda:  0.0174533
+[ MESSAGE "CKFTracking"] 	InitialTrackError_Phi:  0.0174533
+[ MESSAGE Info in <TGeoManager::Import>: Reading geometry from file: /opt/ilcsoft/muonc/ACTSTracking/v1.0.0/data/MuColl_v1.root
+"CKFTracking"] 	InitialTrackError_Pos:  0.01
+[ MESSAGE "CKFTracking"] 	InitialTrackError_RelP:  0.25
+[ MESSAGE "CKFTracking"] 	MatFile:  /opt/ilcsoft/muonc/ACTSTracking/v1.0.0/data/material-maps.json
+[ MESSAGE "CKFTracking"] 	RunCKF:  true
+[ MESSAGE "CKFTracking"] 	SeedCollectionName:  SeedTracks
+[ MESSAGE "CKFTracking"] 	SeedFinding_CollisionRegion:  1
+[ MESSAGE "CKFTracking"] 	SeedFinding_DeltaRMax:  80
+[ MESSAGE "CKFTracking"] 	SeedFinding_DeltaRMin:  5
+[ MESSAGE "CKFTracking"] 	SeedFinding_MinPt:  500
+[ MESSAGE "CKFTracking"] 	SeedFinding_RMax:  150
+[ MESSAGE "CKFTracking"] 	SeedFinding_RadLengthPerSeed:  0.1
+[ MESSAGE "CKFTracking"] 	SeedFinding_SigmaScattering:  50
+[ MESSAGE "CKFTracking"] 	SeedFinding_ZMax:  600
+[ MESSAGE "CKFTracking"] 	SeedingLayers:  13 2 13 6 13 10 13 14 14 2 14 6 14 10 14 14 15 2 15 6 15 10 15 14 
+[ MESSAGE "CKFTracking"] 	TGeoFile:  /opt/ilcsoft/muonc/ACTSTracking/v1.0.0/data/MuColl_v1.root
+[ MESSAGE "CKFTracking"] 	TrackCollectionName:  AllTracks
+[ MESSAGE "CKFTracking"] 	TrackerHitCollectionNames:  VBTrackerHits IBTrackerHits OBTrackerHits VETrackerHits IETrackerHits OETrackerHits 
+[ MESSAGE "CKFTracking"] -------------------------------------------------
+[ MESSAGE "CKFTracking"]  -------------------------------------
+[ MESSAGE "CKFTracking"]  -- Building magnetic field
+[ MESSAGE "CKFTracking"]  -- Building tracking detector
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is world_volume. Master volume is world_volume
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 5, max placements = 27552
+Info in <TGeoManager::CloseGeometry>: 1591145 nodes/ 265 volume UID's in Detector Geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+Warning in <TGeoMatrix::dtor>: Registered matrix ID was removed
+[ MESSAGE "CKFTracking"]  -------------------------------------
+[ MESSAGE "TrackDeduper"] 
+[ MESSAGE "TrackDeduper"] ---- TrackDeduper -  parameters: 
+[ MESSAGE "TrackDeduper"] 	InputTrackCollectionName:  AllTracks
+[ MESSAGE "TrackDeduper"] 	OutputTrackCollectionName:  SiTracks
+[ MESSAGE "TrackDeduper"] -------------------------------------------------
+[ MESSAGE "Refit"] 
+[ MESSAGE "Refit"] ---- Refit -  parameters: 
+[ MESSAGE "Refit"] 	EnergyLossOn:  true
+[ MESSAGE "Refit"] 	InputRelationCollectionName:  SiTrackRelations
+[ MESSAGE "Refit"] 	InputTrackCollectionName:  SiTracks
+[ MESSAGE "Refit"] 	Max_Chi2_Incr:  1.79769e+30
+[ MESSAGE "Refit"] 	MinClustersOnTrackAfterFit:  3
+[ MESSAGE "Refit"] 	MultipleScatteringOn:  true
+[ MESSAGE "Refit"] 	NHitsCuts:  1,2 1 3,4 1 5,6 0 
+[ MESSAGE "Refit"] 	OutputRelationCollectionName:  SiTracks_Refitted_Relation
+[ MESSAGE "Refit"] 	OutputTrackCollectionName:  SiTracks_Refitted
+[ MESSAGE "Refit"] 	ReducedChi2Cut:  3
+[ MESSAGE "Refit"] 	ReferencePoint:  -1
+[ MESSAGE "Refit"] 	SmoothOn:  false
+[ MESSAGE "Refit"] 	Verbosity:  MESSAGE
+[ MESSAGE "Refit"] 	extrapolateForward:  true
+[ MESSAGE "Refit"] -------------------------------------------------
+[ MESSAGE "Refit"]  Factory::createMarlinTrkSystem:  creating IMarlinTrkSystem of type "DDKalTest"
+[ MESSAGE "Refit"]  MarlinDDKalTest: install IP layer at radius : 115.534
+[ MESSAGE "MyTrackTruth"] 
+[ MESSAGE "MyTrackTruth"] ---- MyTrackTruth -  parameters: 
+[ MESSAGE "MyTrackTruth"] 	MCParticleCollectionName:  MCParticle
+[ MESSAGE "MyTrackTruth"] 	Particle2TrackRelationName:  MCParticle_SiTracks_Refitted
+[ MESSAGE "MyTrackTruth"] 	TrackCollection:  SiTracks_Refitted
+[ MESSAGE "MyTrackTruth"] 	TrackerHit2SimTrackerHitRelationName:  VBTrackerHitsRelations IBTrackerHitsRelations OBTrackerHitsRelations VETrackerHitsRelations IETrackerHitsRelations OETrackerHitsRelations 
+[ MESSAGE "MyTrackTruth"] -------------------------------------------------
+[ MESSAGE "MyEcalBarrelDigi"] 
+[ MESSAGE "MyEcalBarrelDigi"] ---- MyEcalBarrelDigi -  parameters: 
+[ MESSAGE "MyEcalBarrelDigi"] 	CellIDLayerString:  layer
+[ MESSAGE "MyEcalBarrelDigi"] 	calibration_mip:  0.0001575
+[ MESSAGE "MyEcalBarrelDigi"] 	deadCell_fraction:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	deadCell_memorise:  false
+[ MESSAGE "MyEcalBarrelDigi"] 	elec_noise_mip:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	elec_range_mip:  2500
+[ MESSAGE "MyEcalBarrelDigi"] 	fastShaper:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	inputHitCollections:  ECalBarrelCollection 
+[ MESSAGE "MyEcalBarrelDigi"] 	integrationMethod:  Standard
+[ MESSAGE "MyEcalBarrelDigi"] 	miscalibration_correl:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	miscalibration_uncorrel:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	miscalibration_uncorrel_memorise:  false
+[ MESSAGE "MyEcalBarrelDigi"] 	outputHitCollections:  EcalBarrelCollectionDigi 
+[ MESSAGE "MyEcalBarrelDigi"] 	outputRelationCollections:  EcalBarrelRelationsSimDigi 
+[ MESSAGE "MyEcalBarrelDigi"] 	silicon_pairEnergy:  3.6
+[ MESSAGE "MyEcalBarrelDigi"] 	slowShaper:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	threshold:  0.002
+[ MESSAGE "MyEcalBarrelDigi"] 	thresholdUnit:  GeV
+[ MESSAGE "MyEcalBarrelDigi"] 	timingCorrectForPropagation:  1
+[ MESSAGE "MyEcalBarrelDigi"] 	timingCut:  1
+[ MESSAGE "MyEcalBarrelDigi"] 	timingResolution:  0
+[ MESSAGE "MyEcalBarrelDigi"] 	timingWindowMax:  10
+[ MESSAGE "MyEcalBarrelDigi"] 	timingWindowMin:  -0.5
+[ MESSAGE "MyEcalBarrelDigi"] -------------------------------------------------
+[ MESSAGE "MyEcalBarrelReco"] 
+[ MESSAGE "MyEcalBarrelReco"] ---- MyEcalBarrelReco -  parameters: 
+[ MESSAGE "MyEcalBarrelReco"] 	CellIDLayerString:  layer
+[ MESSAGE "MyEcalBarrelReco"] 	calibration_factorsMipGev:  0.00641223 
+[ MESSAGE "MyEcalBarrelReco"] 	calibration_layergroups:  50 
+[ MESSAGE "MyEcalBarrelReco"] 	inputHitCollections:  EcalBarrelCollectionDigi 
+[ MESSAGE "MyEcalBarrelReco"] 	inputRelationCollections:  EcalBarrelRelationsSimDigi 
+[ MESSAGE "MyEcalBarrelReco"] 	outputHitCollections:  EcalBarrelCollectionRec 
+[ MESSAGE "MyEcalBarrelReco"] 	outputRelationCollections:  EcalBarrelRelationsSimRec 
+[ MESSAGE "MyEcalBarrelReco"] -------------------------------------------------
+[ MESSAGE "MyEcalEndcapDigi"] 
+[ MESSAGE "MyEcalEndcapDigi"] ---- MyEcalEndcapDigi -  parameters: 
+[ MESSAGE "MyEcalEndcapDigi"] 	CellIDLayerString:  layer
+[ MESSAGE "MyEcalEndcapDigi"] 	calibration_mip:  0.0001575
+[ MESSAGE "MyEcalEndcapDigi"] 	deadCell_fraction:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	deadCell_memorise:  false
+[ MESSAGE "MyEcalEndcapDigi"] 	elec_noise_mip:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	elec_range_mip:  2500
+[ MESSAGE "MyEcalEndcapDigi"] 	fastShaper:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	inputHitCollections:  ECalEndcapCollection 
+[ MESSAGE "MyEcalEndcapDigi"] 	integrationMethod:  Standard
+[ MESSAGE "MyEcalEndcapDigi"] 	miscalibration_correl:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	miscalibration_uncorrel:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	miscalibration_uncorrel_memorise:  false
+[ MESSAGE "MyEcalEndcapDigi"] 	outputHitCollections:  EcalEndcapCollectionDigi 
+[ MESSAGE "MyEcalEndcapDigi"] 	outputRelationCollections:  EcalEndcapRelationsSimDigi 
+[ MESSAGE "MyEcalEndcapDigi"] 	silicon_pairEnergy:  3.6
+[ MESSAGE "MyEcalEndcapDigi"] 	slowShaper:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	threshold:  0.002
+[ MESSAGE "MyEcalEndcapDigi"] 	thresholdUnit:  GeV
+[ MESSAGE "MyEcalEndcapDigi"] 	timingCorrectForPropagation:  1
+[ MESSAGE "MyEcalEndcapDigi"] 	timingCut:  1
+[ MESSAGE "MyEcalEndcapDigi"] 	timingResolution:  0
+[ MESSAGE "MyEcalEndcapDigi"] 	timingWindowMax:  10
+[ MESSAGE "MyEcalEndcapDigi"] 	timingWindowMin:  -0.5
+[ MESSAGE "MyEcalEndcapDigi"] -------------------------------------------------
+[ MESSAGE "MyEcalEndcapReco"] 
+[ MESSAGE "MyEcalEndcapReco"] ---- MyEcalEndcapReco -  parameters: 
+[ MESSAGE "MyEcalEndcapReco"] 	CellIDLayerString:  layer
+[ MESSAGE "MyEcalEndcapReco"] 	calibration_factorsMipGev:  0.00641223 
+[ MESSAGE "MyEcalEndcapReco"] 	calibration_layergroups:  50 
+[ MESSAGE "MyEcalEndcapReco"] 	inputHitCollections:  EcalEndcapCollectionDigi 
+[ MESSAGE "MyEcalEndcapReco"] 	inputRelationCollections:  EcalEndcapRelationsSimDigi 
+[ MESSAGE "MyEcalEndcapReco"] 	outputHitCollections:  EcalEndcapCollectionRec 
+[ MESSAGE "MyEcalEndcapReco"] 	outputRelationCollections:  EcalEndcapRelationsSimRec 
+[ MESSAGE "MyEcalEndcapReco"] -------------------------------------------------
+[ MESSAGE "MyHcalBarrelDigi"] 
+[ MESSAGE "MyHcalBarrelDigi"] ---- MyHcalBarrelDigi -  parameters: 
+[ MESSAGE "MyHcalBarrelDigi"] 	CellIDLayerString:  layer
+[ MESSAGE "MyHcalBarrelDigi"] 	calibration_mip:  0.0004825
+[ MESSAGE "MyHcalBarrelDigi"] 	deadCell_fraction:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	deadCell_memorise:  false
+[ MESSAGE "MyHcalBarrelDigi"] 	elec_noise_mip:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	elec_range_mip:  2500
+[ MESSAGE "MyHcalBarrelDigi"] 	fastShaper:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	inputHitCollections:  HCalBarrelCollection 
+[ MESSAGE "MyHcalBarrelDigi"] 	integrationMethod:  Standard
+[ MESSAGE "MyHcalBarrelDigi"] 	miscalibration_correl:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	miscalibration_uncorrel:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	miscalibration_uncorrel_memorise:  false
+[ MESSAGE "MyHcalBarrelDigi"] 	outputHitCollections:  HcalBarrelsCollectionDigi 
+[ MESSAGE "MyHcalBarrelDigi"] 	outputRelationCollections:  HcalBarrelsRelationsSimDigi 
+[ MESSAGE "MyHcalBarrelDigi"] 	ppd_mipPe:  15
+[ MESSAGE "MyHcalBarrelDigi"] 	ppd_npix:  2000
+[ MESSAGE "MyHcalBarrelDigi"] 	ppd_npix_uncert:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	ppd_pix_spread:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	slowShaper:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	threshold:  0.002
+[ MESSAGE "MyHcalBarrelDigi"] 	thresholdUnit:  GeV
+[ MESSAGE "MyHcalBarrelDigi"] 	timingCorrectForPropagation:  1
+[ MESSAGE "MyHcalBarrelDigi"] 	timingCut:  1
+[ MESSAGE "MyHcalBarrelDigi"] 	timingResolution:  0
+[ MESSAGE "MyHcalBarrelDigi"] 	timingWindowMax:  10
+[ MESSAGE "MyHcalBarrelDigi"] 	timingWindowMin:  -0.5
+[ MESSAGE "MyHcalBarrelDigi"] -------------------------------------------------
+[ MESSAGE "MyHcalBarrelReco"] 
+[ MESSAGE "MyHcalBarrelReco"] ---- MyHcalBarrelReco -  parameters: 
+[ MESSAGE "MyHcalBarrelReco"] 	CellIDLayerString:  layer
+[ MESSAGE "MyHcalBarrelReco"] 	calibration_factorsMipGev:  0.0231349 
+[ MESSAGE "MyHcalBarrelReco"] 	calibration_layergroups:  100 
+[ MESSAGE "MyHcalBarrelReco"] 	inputHitCollections:  HcalBarrelsCollectionDigi 
+[ MESSAGE "MyHcalBarrelReco"] 	inputRelationCollections:  HcalBarrelsRelationsSimDigi 
+[ MESSAGE "MyHcalBarrelReco"] 	outputHitCollections:  HcalBarrelsCollectionRec 
+[ MESSAGE "MyHcalBarrelReco"] 	outputRelationCollections:  HcalBarrelsRelationsSimRec 
+[ MESSAGE "MyHcalBarrelReco"] 	ppd_mipPe:  15
+[ MESSAGE "MyHcalBarrelReco"] 	ppd_npix:  2000
+[ MESSAGE "MyHcalBarrelReco"] -------------------------------------------------
+[ MESSAGE "MyHcalEndcapDigi"] 
+[ MESSAGE "MyHcalEndcapDigi"] ---- MyHcalEndcapDigi -  parameters: 
+[ MESSAGE "MyHcalEndcapDigi"] 	CellIDLayerString:  layer
+[ MESSAGE "MyHcalEndcapDigi"] 	calibration_mip:  0.0004825
+[ MESSAGE "MyHcalEndcapDigi"] 	deadCell_fraction:  0
+[ MESSAGE "MyHcalEndcapDigi"] 	deadCell_memorise:  false
+[ MESSAGE "MyHcalEndcapDigi"] 	elec_noise_mip:  0
+[ MESSAGE "MyHcalEndcapDigi"] 	elec_range_mip:  2500
+[ MESSAGE "MyHcalEndcapDigi"] 	fastShaper:  0
+[ MESSAGE "MyHcalEndcapDigi"] 	inputHitCollections:  HCalEndcapCollection 
+[ MESSAGE "MyHcalEndcapDigi"] 	integrationMethod:  Standard
+[ MESSAGE "MyHcalEndcapDigi"] 	miscalibration_correl:  0
+[ ME

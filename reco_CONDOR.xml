@@ -56,10 +56,10 @@ href="http://ilcsoft.desy.de/marlin/marlin.xsl"?
     <processor name="MyHcalEndcapReco"/>
 
     <!-- ==========  Calo BIB subtraction  ========== -->
-    <processor name="MyEcalBarrelSelector"/>
+    <!-- <processor name="MyEcalBarrelSelector"/>
     <processor name="MyEcalEndcapSelector"/>
     <processor name="MyHcalBarrelSelector"/>
-    <processor name="MyHcalEndcapSelector"/>
+    <processor name="MyHcalEndcapSelector"/> -->
 
     <!-- ===============  The more misterious processors  ================= -->
     <processor name="DDMarlinPandora" />
@@ -102,7 +102,7 @@ href="http://ilcsoft.desy.de/marlin/marlin.xsl"?
 
   <processor name="MyAIDAProcessor" type="AIDAProcessor">
     <parameter name="FileName" type="string">
-	test.slcio
+	test
     </parameter>
     <parameter name="FileType" type="string">root</parameter>
   </processor>
@@ -334,11 +334,11 @@ href="http://ilcsoft.desy.de/marlin/marlin.xsl"?
   <processor name="CKFTracking" type="ACTSSeededCKFTrackingProc">
     <!-- Path to material description -->
     <parameter name="MatFile" type="string">
-	/opt/ilcsoft/muonc/ACTSTracking/v1.1.0/data/material-maps.json 
+	/opt/ilcsoft/muonc/ACTSTracking/v1.0.0/data/material-maps.json 
     </parameter>
     <!-- Path to tracking geometry -->
     <parameter name="TGeoFile" type="string">
-	/opt/ilcsoft/muonc/ACTSTracking/v1.1.0/data/MuColl_v1.root
+	/opt/ilcsoft/muonc/ACTSTracking/v1.0.0/data/MuColl_v1.root
     </parameter>
     <!-- Vol Layer, use -1 for all, ACTS numbers -->
     <parameter name="SeedingLayers" type="string">
@@ -592,7 +592,7 @@ href="http://ilcsoft.desy.de/marlin/marlin.xsl"?
   </processor>
 
   <!-- Calo BIB subtraction-->
-  <processor name="MyEcalBarrelSelector" type="CaloHitSelector">
+   <processor name="MyEcalBarrelSelector" type="CaloHitSelector">
     <parameter name="CaloHitCollectionName"> EcalBarrelCollectionRec </parameter>
     <parameter name="GoodHitCollection"> EcalBarrelCollectionSel </parameter>
     <parameter name="CaloRelationCollectionName"> EcalBarrelRelationsSimRec </parameter>
@@ -628,7 +628,7 @@ href="http://ilcsoft.desy.de/marlin/marlin.xsl"?
 
 
 <processor name="DDMarlinPandora" type="DDPandoraPFANewProcessor">
-  <parameter name="PandoraSettingsXmlFile" type="String"> /code/SteeringMacros/Reco/PandoraSettings/PandoraSettingsDefault.xml </parameter>
+  <parameter name="PandoraSettingsXmlFile" type="String"> /home/bjohn214/SteeringMacros/Reco/PandoraSettings/PandoraSettingsDefault.xml </parameter>
   <!-- CLIC specifict software compensation weights derived from K0L and neutrons -->
   <parameter name="SoftwareCompensationWeights" type="FloatVec">1.61741 -0.00444385 2.29683e-05 -0.0731236 -0.00157099 -7.09546e-07 0.868443 1.0561 -0.0238574</parameter>
   <parameter name="SoftwareCompensationEnergyDensityBins" type="FloatVec">0 2. 5. 7.5 9.5 13. 16. 20. 23.5 28. 33. 40. 50. 75. 100.</parameter>
